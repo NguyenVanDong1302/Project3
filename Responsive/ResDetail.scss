@@ -1,0 +1,128 @@
+@media screen and (max-width: 991px) {
+    .detail-product__title {
+        padding-right: 50px;
+        h3 {
+            font-size: 3em !important;
+        }
+    }
+    .section-items-2 {
+        display: flex !important;
+        .section-item__info {
+            h2 {
+                font-size: 30px !important;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .detail-product-items {
+        flex-direction: column;
+    }
+    .character-introduction-items {
+        flex-direction: column;
+        align-items: center;
+        .item {
+            margin: 10px 0;
+            + .item {
+                margin-left: 0 !important;
+            }
+        }
+    }
+    .detail-product__title {
+        padding-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .table {
+        display: none !important;
+    }
+    .detail-product__title {
+        h3 {
+            font-size: 2em !important;
+        }
+    }
+    .list-feature-wrapper {
+        div {
+            flex-direction: column;
+        }
+    }
+    .evaluate-item {
+        flex-direction: column;
+    }
+    .section-items-2 {
+        .section-item {
+            flex-direction: column;
+            img {
+                width: 80% !important;
+            }
+        }
+    }
+    .compare-wrapper {
+        h2 {
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    .listt {
+        flex-direction: column;
+    }
+    .related-prodcuts-items {
+        display: flex;
+        justify-content: center;
+    }
+    .character-introduction-items {
+        .item {
+            flex-direction: column;
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .carousel-indicators img {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    .header-wrapper {
+        .logo {
+            padding: 0;
+            img {
+                max-width: 200px;
+            }
+        }
+    }
+    .collapse-wrapper {
+        width: 90% !important;
+    }
+    .section-item__info {
+        padding: 30px 10px !important;
+    }
+    .section-items .section-item + div {
+        margin-left: 0 !important;
+    }
+
+    .modal-content {
+        width: 85% !important;
+    }
+    .header-wrapper {
+        position: relative;
+    }
+    .container-fluid {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+    }
+
+    header{
+        height: unset !important;
+        padding-bottom: 30px;
+    }
+    .sticky{
+        position: fixed !important;
+        height: 40px;
+    }
+}

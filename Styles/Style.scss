@@ -1,0 +1,1022 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    animation-name: identifier;
+    animation-duration: 0.5s;
+    @keyframes identifier {
+        0% {
+            transform: translateY(-100%);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    .logo {
+        padding: 0;
+        position: absolute;
+        left: 23%;
+        img {
+            max-height: 35px;
+        }
+    }
+    nav {
+        margin: 0;
+        padding: 0;
+        .nav-link {
+            padding: 15px;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+header {
+    height: 220px;
+}
+.header-wrapper {
+    width: 100%;
+    // display: flex;
+    justify-content: center;
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.carousel-item__title,
+.product-catalog__title,
+.themecolor,
+.name-event {
+    font-family: "Bodoni Moda", serif;
+}
+.product-catalog-items,
+header,
+.carousel-item__title,
+.product__list__feature,
+.catalog-product__info,
+.product__select__color,
+.btn-feature,
+.banner-2-item,
+.carousel__item__content,
+.desc,
+.benefit-items,
+.benefit__content__item,
+.bestsellers-items,
+.list-brand-items,
+.list-brand-wrapper,
+.contact-wrapper,
+.section-wrapper,
+.section-item,
+.footer-item,
+.evaluate-items,
+.evaluate__item,
+.compare-items {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    width: 100%;
+    background-color: #ffffff;
+    .header-top {
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        .header-top-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 65%;
+            width: 100%;
+            color: #bbbbbb;
+            font-size: 17px;
+            padding: 7px 0;
+            a {
+                color: #ebc989;
+                text-decoration: none;
+            }
+            .header-top__right {
+                display: flex;
+                align-items: center;
+                a {
+                    position: relative;
+                    color: #7a7a7a;
+                    + a {
+                        padding-left: 5px;
+                        &::before {
+                            content: "";
+                            width: 1px;
+                            height: 100%;
+                            position: absolute;
+                            background-color: #7a7a7a;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .logo {
+        padding: 30px 0;
+        img {
+            max-width: 281px;
+            width: 100%;
+        }
+    }
+}
+.content {
+    padding-bottom: 50px;
+    background-color: #ffffff;
+    margin-bottom: 510px;
+}
+.navbar-wrapper {
+    background-color: transparent;
+    position: relative;
+    .navbar-collapse {
+        justify-content: center;
+    }
+    .navbar-nav {
+        .nav-item {
+            white-space: nowrap;
+            a {
+                font-size: 14px;
+                font-weight: 500;
+                color: #000000;
+                position: relative;
+                &::after {
+                    content: "";
+                    height: 3px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    background-color: #f3d389;
+                    left: 0;
+                    display: none;
+                }
+            }
+            .active {
+                color: #f3d389;
+                &::after {
+                    display: flex;
+                }
+            }
+            &:hover {
+                a {
+                    color: #f3d389 !important;
+                    &::after {
+                        display: flex;
+                    }
+                }
+            }
+            + li {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .navbar-content-right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0px 10px;
+        position: absolute;
+        right: 0;
+        span {
+            color: #333333;
+            font-size: 17px;
+            font-weight: 600;
+            position: relative;
+            + span {
+                margin-left: 20px;
+            }
+            .header-wishlist-count {
+                position: absolute;
+                top: -8px;
+                background-color: #ebc989;
+                color: #fff;
+                height: 18px;
+                width: 18px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                right: -18px;
+                font-size: 13px;
+            }
+        }
+    }
+    &::before {
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        background-color: #d8d8d8;
+        top: 0;
+    }
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .banner-left,
+    .banner-right {
+        padding: 15px 10px;
+    }
+    .banner-right {
+        .banner-right-item,
+        h3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .banner-right-item:first-child {
+            background-color: #eef2f3;
+            // max-height: 255px;
+            height: 255px;
+            padding: 40px 0;
+            margin-bottom: 20px;
+        }
+        .banner-right-item:last-child {
+            background-color: #eeeceb;
+            background-image: url("https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-promo-bg1.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 40px 5%;
+            height: 100%;
+            img {
+                width: 70%;
+            }
+        }
+
+        .banner-right-item {
+            h3 {
+                font-family: "Bodoni Moda", serif;
+                font-size: 35px;
+                line-height: 40px;
+                font-weight: 500;
+                letter-spacing: 0px;
+            }
+            .item-time {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                span {
+                    font-weight: 700;
+                    margin: 0px 12px;
+                    padding: 12px;
+                    position: relative;
+                    cursor: pointer;
+                }
+            }
+            .view-collection {
+                font-weight: 700;
+                padding: 15px 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.hover-ab {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        left: 0;
+        transition: all 0.5s ease;
+        bottom: 0;
+    }
+    &::after {
+        top: calc(100% - 3px);
+    }
+    &:hover {
+        &::before,
+        &::after {
+            background: rgba(0, 0, 0, 1);
+        }
+        &::after {
+            top: 0;
+        }
+    }
+}
+.carousel-item {
+    position: relative;
+    .carousel-item__title {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        h3 {
+            font-size: 3.75em;
+            font-style: italic;
+        }
+        h4 {
+            animation-delay: 0.05s;
+            font-size: 4em;
+            font-weight: 500;
+        }
+        h5 {
+            color: #ebc989;
+            font-size: 5.25em;
+            font-weight: bold;
+            animation-delay: 0.1s;
+        }
+    }
+}
+
+.list-option-product {
+    display: flex;
+    justify-content: center;
+}
+.list-option-items {
+    height: 200px;
+    .option-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 60px;
+        height: 100%;
+        cursor: pointer;
+        span,
+        i {
+            transition: all 0.3s ease;
+        }
+        span {
+            font-family: "Bodoni Moda", serif;
+            position: relative;
+            color: #171b20;
+            top: 20%;
+            opacity: 0.5;
+            font-size: 24px;
+            white-space: nowrap;
+        }
+        i {
+            position: relative;
+            bottom: 10%;
+            opacity: 0;
+            pointer-events: none;
+            color: #171b20;
+        }
+        &:hover {
+            span,
+            i {
+                opacity: 1;
+                color: #000000;
+            }
+            span {
+                top: 0;
+            }
+            i {
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.greeting-wrapper {
+    display: flex;
+    justify-content: center;
+    .greeting-items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        .greeting-content {
+            padding: 35px 0;
+            h3 {
+                text-align: center;
+                font-family: "Bodoni Moda", serif;
+                line-height: 45px;
+                font-weight: 400;
+
+                span {
+                    z-index: 1;
+                    position: relative;
+                    .highlight-border {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        bottom: 20%;
+                        width: calc(100% + 0.3em);
+                        height: 15%;
+                        margin-left: -0.15em;
+                        transform: skew(-12deg) translateX(0);
+                        background: #0089f7;
+                        z-index: -1;
+                        background-color: #ebc989;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.catalog-product__image {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .catalog-product-image-hover {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.6s ease;
+    }
+    &:hover {
+        .catalog-product-image-hover {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+    .product__list__feature {
+        position: absolute;
+        width: 100%;
+        flex-direction: row;
+        background-color: #ffffff;
+        max-height: 33px;
+        height: 100%;
+        bottom: 0;
+        transition: all 0.7s ease;
+        transform: translateY(100%);
+        span {
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+                i {
+                    color: #ebc989;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .product__list__feature {
+            transform: translateY(0);
+        }
+    }
+}
+
+.catalog-product__info {
+    padding: 10px 0;
+    .product__info__name {
+        text-align: center;
+        color: #373f4b;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+}
+.product__price {
+    margin-bottom: 15px;
+    span {
+        color: #ebc989;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .product-cost {
+        font-size: 14px;
+        text-decoration: line-through;
+        opacity: 0.4;
+    }
+}
+.product__select__color {
+    ul {
+        list-style: none;
+        display: flex;
+        margin-bottom: 0;
+        padding-left: 0;
+
+        li {
+            width: 22px;
+            height: 22px;
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            line-height: 22px;
+            padding: 0 10px;
+            border-radius: 3px;
+            margin: 2px;
+            border-radius: 50%;
+            padding: 2px;
+            span {
+                background-color: red;
+                width: 100%;
+                height: 100%;
+                display: block;
+                border-radius: 50%;
+            }
+            .blue {
+                background-color: rgb(58, 99, 128);
+            }
+            .violet {
+                background-color: rgb(119, 61, 73);
+            }
+            .red {
+                background-color: rgb(188, 42, 50);
+            }
+            .yellow {
+                background-color: rgb(237, 197, 130);
+            }
+            + li {
+                margin-left: 7px;
+            }
+        }
+    }
+}
+.product-catalog__title {
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+}
+.btn-feature {
+    a {
+        border-radius: 5px;
+        button {
+            padding: 10px 40px;
+            font-weight: 600;
+        }
+    }
+    a:first-child {
+        background-color: #000000;
+        button {
+            color: #ffffff;
+        }
+    }
+    a:last-child {
+        background-color: #ececec;
+        margin-left: 15px;
+        button {
+            color: #626262;
+            font-weight: 500;
+        }
+    }
+}
+
+.banner-wrapper-2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    .banner-2-items {
+        display: flex;
+        height: 100%;
+        .banner-2-item:nth-child(1) {
+            padding: 240px 20px 40px;
+            background-color: #e9efef;
+            background-image: url(https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-home-pic1.webp);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            h6 {
+                font-size: 14px;
+                font-weight: 700;
+                margin: 0 0 15px;
+                text-align: center;
+            }
+            .themecolor {
+                color: #ebc989;
+                font-weight: 500;
+                text-align: center;
+            }
+            .name-event {
+                font-size: 55px;
+                font-weight: 500;
+                text-align: center;
+                margin-top: -60px;
+            }
+            .count-down {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-top: 20px;
+                .count-item {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: calc(100% / 3);
+                    span {
+                        color: #ebc989;
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    h5 {
+                        font-family: "Bodoni Moda", serif;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                    &::after {
+                        content: "";
+                        background-color: #cecece;
+                        height: 1;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .banner-2-item:nth-child(2) {
+            background-color: #eaf0f7;
+            position: relative;
+            h6 {
+                font-weight: 700;
+                // font-size: 1.2rem;
+            }
+            h2 {
+                font-family: "Bodoni Moda", serif;
+                font-size: 4rem;
+            }
+            .carousel-wrapper {
+                max-height: 350px;
+                height: 100%;
+                position: relative;
+                .carousel-item {
+                    position: relative;
+                    top: 0;
+                    transition: all 0.5s ease;
+                    img {
+                        width: 100%;
+                    }
+                    desc {
+                        padding: 10px 0;
+                    }
+                }
+
+                .carousel-indicators {
+                    margin-bottom: 0;
+                    bottom: -30px;
+                    button {
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                    }
+                    .active {
+                        background-color: #ebc989;
+                    }
+                }
+            }
+            .control-slide {
+                display: flex;
+                width: 70%;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+                position: absolute;
+                .carousel-control-prev,
+                .carousel-control-next {
+                    position: relative !important;
+                    i {
+                        // background-color: #ff0000;
+                        color: #c9c9c9;
+                        font-size: 5em;
+                        font-weight: 200;
+                        transition: all 0.5s ease;
+                    }
+                    &:hover {
+                        i {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.benefit-wrapper {
+    margin-top: 50px;
+    .benefit-items {
+        display: flex;
+        > h2 {
+            font-family: "Bodoni Moda", serif;
+            font-size: 3em;
+            padding: 20px;
+        }
+        > span {
+            font-size: 20px;
+            color: #373f4b;
+            margin: 0 0 15px;
+            text-align: center;
+        }
+        .benefit__content__items {
+            display: flex;
+            padding: 35px 0;
+        }
+    }
+}
+.btn-see-all-feature {
+    span {
+        max-width: 244px;
+        width: 100%;
+        display: flex;
+        white-space: nowrap;
+        height: 45px;
+        color: #ffffff;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 17px;
+        border-radius: 7px;
+    }
+}
+.menu-bottom-wrapper-2{
+    display: none;
+}
+
+.listt{
+    ul{
+        +ul{
+            margin-left: 20px;
+        }
+    }
+}
+.article-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .article-items {
+        display: flex;
+        justify-content: center;
+        .article-item {
+            ul {
+                list-style: none;
+                width: 100%;
+                margin-bottom: 0;
+                padding-left: 0;
+                display: flex;
+                li {
+                    .article__item {
+                        position: relative;
+
+                        .article__item__info {
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            background: url(https://themes.muffingroup.com/be/babyshop/wp-content/themes/betheme/images/blog_masonry_tile_gradient.png)
+                                top left repeat-x;
+                            padding: 70px 25px 30px;
+                            width: 100%;
+                            font-family: "Bodoni Moda", serif;
+                            transition: all 0.5s ease;
+                            span {
+                                color: #e9e8e8;
+                                margin-bottom: 15px;
+                            }
+                            h3 {
+                                color: #ffffff;
+                                margin: 10px 0;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                height: 3px;
+                                width: 0;
+                                background-color: #ffffff;
+                                left: 25px;
+                                bottom: 25px;
+                                transition: all 0.5s ease;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            z-index: 2;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0, 0, 0, 0.2);
+                            opacity: 0;
+                            transition: all 0.6s ease-out;
+                        }
+
+                        &:hover {
+                            &::after {
+                                opacity: 1;
+                            }
+                            .article__item__info {
+                                padding-bottom: 45px;
+                                &::before {
+                                    width: 25%;
+                                }
+                            }
+                        }
+                    }
+                }
+                li:first-child {
+                    width: calc(100% / 3 * 2);
+                }
+                li:last-child {
+                    width: calc(100% / 3);
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    margin-bottom: 50px;
+}
+
+.list-brand-items {
+    flex-direction: row;
+    padding: 20px 0;
+    a {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(217, 217, 217, 0.1);
+        transition: all 0.5s ease;
+
+        + a {
+            margin-left: 15px;
+        }
+        &:hover {
+            background-color: rgba(217, 217, 217, 0.8);
+        }
+    }
+}
+.contact-wrapper {
+    padding: 30px 0;
+    .contact-banner {
+        padding: 70px 0;
+        // background-color: ;
+        background-image: url(https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-instagram.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        span {
+            padding: 18px 40px;
+            background-color: #ebc989;
+            color: #ffffff;
+            font-weight: 600;
+        }
+    }
+}
+
+.section-items {
+    display: flex;
+    .section-item {
+        flex-direction: row;
+        h3 {
+            white-space: nowrap;
+            margin-left: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        + div {
+            margin-left: 15px;
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+    background-color: rgb(246, 247, 249);
+    .footer-items {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        .footer-item {
+            align-items: flex-start;
+            justify-content: flex-start;
+            .btn {
+                padding: 10px 20px;
+                background-color: #000000;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 1em;
+                margin: 20px 0;
+            }
+            .title {
+                color: #6a717c;
+                font-size: 15px;
+                margin: 0px 0 15px;
+                font-weight: 500;
+                padding: 20px 0 0;
+            }
+            h5 {
+                padding-bottom: 20px;
+                font-weight: 400;
+                + h5 {
+                    margin-top: 20px;
+                }
+            }
+            a {
+                font-size: 20px;
+                color: #444b57;
+                text-decoration: none;
+                padding: 10px 0;
+            }
+            .open-hours {
+                color: #6a717c;
+                span {
+                    display: flex;
+                    color: #000000;
+                    // text-decoration: underline dotted;
+                    p {
+                        color: #6a717c;
+                        text-decoration: none !important;
+                        padding: 0 5px;
+                    }
+                }
+            }
+            li {
+                list-style: none;
+                color: #a3a3a3;
+                font-size: 15px;
+                line-height: 28px;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            + .footer-item {
+                margin-left: 15px;
+            }
+        }
+    }
+}
+
+.introduction-wrapper {
+    border-top: 1px solid #cdc8c8;
+    background-color: rgb(246, 247, 249);
+    padding: 20px 0;
+}
+.introduction-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .introduction-item {
+        .copyright,
+        a {
+            color: #6a717c;
+            text-decoration: none;
+        }
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        ul {
+            display: flex;
+            list-style: none;
+            margin-bottom: 0;
+            li {
+                a {
+                    text-decoration: none;
+                    color: #6a717c;
+                }
+                + li {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.bestsellers-items {
+    h3 {
+        font-size: 3em;
+        font-family: "Bodoni Moda", serif;
+        padding: 10px 0;
+    }
+}

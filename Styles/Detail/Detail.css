@@ -1,0 +1,447 @@
+.detail-product-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfcfc;
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+.detail-product__title {
+  padding-right: 100px;
+}
+.detail-product__title h3 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+.detail-product__title h5 {
+  color: #373f4b;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.detail-product__title ul li {
+  margin-bottom: 10px;
+  color: #888888;
+}
+.detail-product__title > span {
+  color: #888888;
+  padding: 10px 0;
+}
+.detail-product__title .size-chart button {
+  color: #ebc989;
+  font-size: 20px;
+  font-weight: 500;
+}
+.detail-product__title .size-chart button i {
+  color: #ebc989;
+}
+.detail-product__title .product__price span {
+  font-size: 40px;
+}
+.detail-product__title .product__price .product-cost {
+  font-size: 30px;
+}
+.detail-product__title .product__select__color {
+  align-items: flex-start;
+  justify-content: center;
+}
+.detail-product__title .product__select__color ul {
+  align-items: center;
+  width: 100%;
+}
+.detail-product__title .product__select__color ul h4 {
+  color: #6a717c;
+  margin-bottom: 0;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+.detail-product__title .product__select__color ul li {
+  margin-bottom: 0;
+  width: 38px;
+  height: 38px;
+}
+.detail-product__title .product__select__color ul li span {
+  width: 100%;
+  height: 100%;
+}
+.detail-product__title .select-quantity {
+  display: flex;
+  max-height: 44px;
+  margin: 20px 0;
+}
+.detail-product__title .select-quantity .select-quantity-item:first-child {
+  width: 30%;
+  background-color: #f0f2f6;
+  display: flex;
+  margin-right: 5px;
+}
+.detail-product__title .select-quantity .select-quantity-item:first-child span {
+  width: 33.3333333333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detail-product__title .select-quantity .select-quantity-item:last-child {
+  width: 70%;
+  background-color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+}
+.detail-product__title .table ul {
+  list-style: none;
+  display: flex;
+}
+.detail-product__title .table ul li {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.detail-product__title .table ul li span:first-child {
+  color: #6a717c;
+}
+.detail-product__title .table ul li span:last-child {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+.detail-product__title .table ul li span:last-child a {
+  background-color: rgba(0, 0, 0, 0.02);
+  color: #000;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px 7px;
+}
+.detail-product__title .table ul li a {
+  text-decoration: none;
+  color: #cfb481;
+}
+.detail-product__title .table ul li .code-product {
+  padding: 5px 10px !important;
+  border: 1px solid #eaeaea !important;
+  border-radius: 5px;
+}
+.detail-product__title .table ul li + li {
+  border-left: 1px solid #dddee1;
+}
+
+.detail-product__image {
+  position: relative;
+}
+.detail-product__image .carousel {
+  display: flex;
+}
+.detail-product__image .carousel .carousel-indicators {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  flex-direction: column;
+  margin-right: 10px;
+}
+.detail-product__image .carousel .carousel-indicators img {
+  width: 93px;
+  height: 93px;
+  margin: 5px 0;
+  border: none;
+}
+
+.list-feature-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list-feature-wrapper span {
+  color: #000;
+  font-size: 25px;
+  line-height: 28px;
+  margin: 15px 25px;
+}
+
+.evaluate-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.evaluate-wrapper .evaluate-items .title {
+  color: #373f4b;
+  font-size: 20px;
+  margin: 0 0 15px;
+  text-align: center;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item {
+  display: flex;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item {
+  text-align: center;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item h6 {
+  margin-bottom: 15px;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item ul li {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item ul li + li {
+  margin-left: 7px;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item .list-1 li {
+  background-color: #ebc989;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item .list-2 li {
+  background-color: #558d97;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item .list-3 li {
+  background-color: #b5aca0;
+}
+.evaluate-wrapper .evaluate-items .evaluate-item .evaluate__item .list-4 li {
+  background-color: #59616d;
+}
+
+.character-introduction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.character-introduction .character-introduction-items {
+  display: flex;
+  justify-content: center;
+}
+.character-introduction .character-introduction-items .item {
+  display: flex;
+}
+.character-introduction .character-introduction-items .item img {
+  width: 40%;
+}
+.character-introduction .character-introduction-items .item .item__info {
+  padding: 20px 15px;
+  background-color: #fafafa;
+}
+.character-introduction .character-introduction-items .item .item__info h4 {
+  color: #171b20;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Bodoni Moda";
+}
+.character-introduction .character-introduction-items .item .item__info span {
+  color: #6a717c;
+  font-size: 15px;
+  line-height: 28px;
+}
+.character-introduction .character-introduction-items .item + .item {
+  margin-left: 30px;
+}
+
+.description-wrapper p {
+  color: #6a717c;
+  font-weight: 400;
+}
+
+.section-2-wrapper {
+  padding: 30px 0;
+}
+.section-2-wrapper .section-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section-2-wrapper .section-items .section-item img {
+  width: 45%;
+}
+.section-2-wrapper .section-items .section-item .section-item__info {
+  padding: 30px 50px;
+}
+.section-2-wrapper .section-items .section-item .section-item__info h6 {
+  color: #ebc989;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0px 0px 15px;
+}
+.section-2-wrapper .section-items .section-item .section-item__info h2 {
+  color: #171b20;
+  font-family: Bodoni Moda;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 65px;
+  margin: 0px 0px 15px;
+}
+.section-2-wrapper .section-items .section-item .section-item__info span {
+  color: #373f4b;
+  font-family: Jost;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0px 0px 15px;
+}
+.section-2-wrapper .section-items .section-item .section-item__info ul {
+  list-style: none;
+  padding: 20px 0;
+}
+.section-2-wrapper .section-items .section-item .section-item__info ul li {
+  color: #737e86;
+  display: list-item;
+  font-family: Jost;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0px 0px 20px;
+  padding: 0px 0px 0px 30px;
+  text-align: left;
+}
+.section-2-wrapper .section-items .section-item .section-item__info ul li i {
+  color: #ebc989;
+}
+
+.compare-items .compare-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.compare-items h2 {
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-family: "Bodoni Moda", serif;
+}
+.compare-items h2 span {
+  position: relative;
+  z-index: 1;
+}
+.compare-items h2 span .highlight-border {
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: 20%;
+  width: calc(100% + 0.2em);
+  height: 15%;
+  margin-left: -0.15em;
+  transform: skew(-12deg) translateX(0);
+  background: #0089f7;
+  z-index: -1;
+  background-color: #ebc989;
+  color: #000000;
+}
+.compare-items .desc {
+  font-weight: 500;
+  color: #6a717c;
+}
+.compare-items > span {
+  color: #373f4b;
+  font-family: Jost;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0px 0px 15px;
+  text-align: center;
+}
+.compare-items ul {
+  list-style: none;
+  margin-top: 100px;
+}
+.compare-items ul li {
+  text-align: center;
+}
+
+.additional-information-item {
+  white-space: nowrap;
+}
+.additional-information-item span {
+  color: #444444;
+  display: inline;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+  text-align: center;
+}
+.additional-information-item p {
+  color: #6a717c;
+  display: inline-block;
+  font-family: Jost;
+  font-size: 17px;
+  line-height: 25.5px;
+  text-align: right;
+  position: relative;
+}
+.additional-information-item p::before {
+  content: "";
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 1px;
+  background-color: rgb(222, 222, 222);
+  display: flex;
+  align-items: center;
+  left: 35px;
+  top: 50%;
+}
+
+.list-feature-wrapper span {
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-items h3 {
+  color: #171b20;
+  font-family: Bodoni Moda;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0px 0px 15px;
+}
+.review-items p {
+  color: #6a717c;
+  font-family: Jost;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 0px 0px 15px;
+}
+.review-items p a {
+  color: #ebc989;
+  display: inline;
+  font-family: Jost;
+  font-size: 17px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+.related-products-wrapper h3 {
+  color: #171b20;
+  font-family: Bodoni Moda;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0px 0px 15px;
+}
+
+.back-page-items {
+  padding: 40px 30px;
+  background-color: #171b20;
+  color: rgb(142, 144, 146);
+  font-weight: 500;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+.back-page-items a {
+  color: #ffffff;
+}
+.back-page-items:hover {
+  color: rgb(227, 227, 228);
+  background-color: #ebc989;
+}/*# sourceMappingURL=Detail.css.map */
