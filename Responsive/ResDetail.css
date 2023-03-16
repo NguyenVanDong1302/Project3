@@ -71,12 +71,6 @@
     width: 50px !important;
     height: 50px !important;
   }
-  .header-wrapper .logo {
-    padding: 0;
-  }
-  .header-wrapper .logo img {
-    max-width: 200px;
-  }
   .collapse-wrapper {
     width: 90% !important;
   }
@@ -89,21 +83,10 @@
   .modal-content {
     width: 85% !important;
   }
-  .header-wrapper {
-    position: relative;
-  }
   .container-fluid {
     position: absolute;
     top: 0;
     right: 0;
     width: auto;
-  }
-  header {
-    height: unset !important;
-    padding-bottom: 30px;
-  }
-  .sticky {
-    position: fixed !important;
-    height: 40px;
   }
 }/*# sourceMappingURL=ResDetail.css.map */
