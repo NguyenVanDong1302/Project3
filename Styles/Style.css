@@ -729,6 +729,13 @@ header .logo img {
   margin-left: 20px;
 }
 
+.catalog-product-item a {
+  text-decoration: none;
+}
+.catalog-product-item a i {
+  color: #000000;
+}
+
 .article-wrapper {
   display: flex;
   align-items: center;

@@ -755,6 +755,15 @@ header {
         }
     }
 }
+
+.catalog-product-item{
+    a{
+        text-decoration: none;
+        i{
+            color: #000000;
+        }
+    }
+}
 .article-wrapper {
     display: flex;
     align-items: center;
