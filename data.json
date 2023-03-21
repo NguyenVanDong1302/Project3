@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "namePrd": "Duvet Cover Set Pumpkin Bear",
+    "imgAvatar1": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product1a-500x625.webp",
+    "imgAvatar2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product1b-500x625.webp",
+    "Color": ["blue", "brown", "red", "yellow"],
+    "Price": {
+      "cost": 15.0,
+      "price": 10.0
+    },
+    "title": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a non felis eleifend justo vel bibendum sapien.",
+    "ListDesc": [
+      "Maecenas malesuada 5 elit lectus felis, malesuada ultricies.",
+      "Curabitur et ligula. Ut molestie a, ultricies porta urna.",
+      "Vestibulum commodo volutpat a, convallis ac, laoreet enim.",
+      "Phasellus fermentum in, dolor. Pellentesque facilisis."
+    ],
+    "Composition": "Main material: 95% Cotton, 5% Polyester",
+    "Tags": ["Duvet cover", "kids", "Recyclable"],
+    "Category": "Bed sets",
+    "SKU": "BE-8727U2",
+    "inCart": true
+  },
+  {
+    "id": 3,
+    "namePrd": "Baby Set Hello Cutie",
+    "imgAvatar1": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11c-500x625.webp",
+    "imgAvatar2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11b-500x625.webp",
+    "Color": ["blue", "brown", "red", "yellow"],
+    "Price": {
+      "cost": 15.0,
+      "price": 10.0
+    },
+    "title": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a non felis eleifend justo vel bibendum sapien.",
+    "ListDesc": [
+      "Maecenas malesuada 5 elit lectus felis, malesuada ultricies.",
+      "Curabitur et ligula. Ut molestie a, ultricies porta urna.",
+      "Vestibulum commodo volutpat a, convallis ac, laoreet enim.",
+      "Phasellus fermentum in, dolor. Pellentesque facilisis."
+    ],
+    "Composition": "Main material: 95% Cotton, 5% Polyester",
+    "Tags": ["Duvet cover", "kids", "Recyclable"],
+    "Category": "Bed sets",
+    "SKU": "BE-8727U2",
+    "inCart": true
+  },
+  {
+    "id": 4,
+    "namePrd": "Baby Set Hello Cutie",
+    "imgAvatar1": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11c-500x625.webp",
+    "imgAvatar2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11b-500x625.webp",
+    "Color": ["blue", "brown", "red", "yellow"],
+    "Price": {
+      "cost": 15.0,
+      "price": 10.0
+    },
+    "title": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a non felis eleifend justo vel bibendum sapien.",
+    "ListDesc": [
+      "Maecenas malesuada 5 elit lectus felis, malesuada ultricies.",
+      "Curabitur et ligula. Ut molestie a, ultricies porta urna.",
+      "Vestibulum commodo volutpat a, convallis ac, laoreet enim.",
+      "Phasellus fermentum in, dolor. Pellentesque facilisis."
+    ],
+    "Composition": "Main material: 95% Cotton, 5% Polyester",
+    "Tags": ["Duvet cover", "kids", "Recyclable"],
+    "Category": "Bed sets",
+    "SKU": "BE-8727U2",
+    "inCart": true
+  }
+]
