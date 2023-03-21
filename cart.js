@@ -1,18 +1,12 @@
-// const url = window.location.href;
-// let id = url.match(/id=(\d+)/)[1];
-// id = parseInt(id);
-// let mainData;
-
 async function start() {
-  await getCourses(renderCourses);
+  handleGetCart();
   handleCreateToCart();
   renderListCart();
   handleCart();
-  handleShowBtnAdd();
+
   handleShowSumProduct();
 }
 
-start();
 async function getCourses(callback) {
   try {
     await fetch("../data.json")
@@ -37,25 +31,8 @@ function generateID() {
   }
   return idTagPrd;
 }
-const handleGetCart = () => {
-  var dataLocal = [];
-  dataLocal = localStorage.getItem("listCart");
-  dataLocal = JSON.parse(dataLocal);
-  return dataLocal;
-};
 
-const handleShowBtnAdd = () => {
-  var listColorSelect = document.querySelectorAll(".list-select__color input");
-  for (let i = 0; i < listColorSelect.length; i++) {
-    listColorSelect[i].addEventListener("change", () => {
-      console.log("heelo");
-      const dimiss = document.querySelector(".dimiss");
-      dimiss.classList.remove("dimiss");
-      dimiss.classList.add("btn-add-to-cart");
-      handleCreateToCart();
-    });
-  }
-};
+
 
 const handleShowSumProduct = () => {
   const countWishlist = document.querySelector(".header-wishlist-count-cart");
@@ -119,6 +96,13 @@ function handleCreateToCart() {
     };
   }
 }
+
+const handleGetCart = () => {
+  var dataLocal = [];
+  dataLocal = localStorage.getItem("listCart");
+  dataLocal = JSON.parse(dataLocal);
+  return dataLocal;
+};
 
 const handleCart = () => {
   const btnOfCvCart = document.querySelector(".btn-toggle-offcanvas-cart");
@@ -239,3 +223,5 @@ const renderListCart = () => {
     })
     .join(" ");
 };
+
+start();

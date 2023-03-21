@@ -6,6 +6,7 @@ let mainData;
 async function start() {
   await getCourses(renderCourses);
   await getCourses(renderSlider);
+  handleShowBtnAdd();
   createCourse();
 }
 
@@ -23,6 +24,19 @@ async function getCourses(callback) {
       .then(callback);
   } catch {}
 }
+const handleShowBtnAdd = () => {
+  var listColorSelect = document.querySelectorAll(".list-select__color input");
+  console.log(listColorSelect);
+  for (let i = 0; i < listColorSelect.length; i++) {
+    listColorSelect[i].addEventListener("change", () => {
+      console.log("heelo");
+      const dimiss = document.querySelector(".dimiss");
+      dimiss.classList.remove("dimiss");
+      dimiss.classList.add("btn-add-to-cart");
+      handleCreateToCart();
+    });
+  }
+};
 
 function renderCourses(dataProduct) {
   const detailText = document.querySelector(".detail-product__title");
