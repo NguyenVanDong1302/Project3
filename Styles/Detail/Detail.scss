@@ -421,13 +421,13 @@
         }
     }
 }
-.list-feature-wrapper{
-span{
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.list-feature-wrapper {
+    span {
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .review-items {
     h3 {
@@ -478,4 +478,18 @@ span{
         color: rgb(227, 227, 228);
         background-color: #ebc989;
     }
+}
+
+.quantity__item {
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+}
+
+.dimiss {
+    cursor: no-drop !important;
+    background-color: #909090 !important;
 }

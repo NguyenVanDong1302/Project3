@@ -5,11 +5,8 @@ let mainData;
 
 async function start() {
   await getCourses(renderCourses);
-  //   handleCreateToCart();
+  await getCourses(renderSlider);
   createCourse();
-  handleCreateToCart();
-  renderListCart();
-  handleCart();
 }
 
 async function getCourses(callback) {
@@ -84,7 +81,7 @@ function renderCourses(dataProduct) {
                           <div class="list-select__color">
                                   ${dataProduct.Color.map(
                                     (item) => `
-                                    <input type="radio" id="${item}" name="fav_language" value="${item}" d-none>
+                                    <input type="radio" id="${item}" name="fav_language" value="${item}" class="radio-color-product d-none" >
                                     <label  for="${item}">
                                     <li><span class="${item}"></span></li>
                                     </label>
@@ -100,7 +97,7 @@ function renderCourses(dataProduct) {
                                 <input type=number value='1' /></span>
                                 <span class="">+</span>
                             </div>
-                            <div class="select-quantity-item btn-add-to-cart btn">
+                            <div class="select-quantity-item select-quantity-item-2 btn dimiss">
                                 Add to cart
                             </div>
                         </div>
@@ -131,6 +128,41 @@ function renderCourses(dataProduct) {
     `;
 }
 
+const renderSlider = (dataProduct) => {
+  const sliderProduct = document.querySelector(".slider-detail-product");
+  sliderProduct.innerHTML = `
+   <div class="carousel-indicators">
+                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"
+                                    src="${dataProduct.imageSlider1}"
+                                    alt="">
+                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"
+                                    src="${dataProduct.imageSlider2}"
+                                    alt="">
+                                <img type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"
+                                    src="${dataProduct.imageSlider3}"
+                                    alt="">
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="${dataProduct.imageSlider1}"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="${dataProduct.imageSlider2}"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="${dataProduct.imageSlider3}"
+                                        class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+  
+  `;
+};
+
 start();
 let dataCart;
 async function createCourse(data, callback) {
@@ -141,150 +173,4 @@ async function createCourse(data, callback) {
       // console.log(data);
     })
     .catch((error) => console.error(error));
-  //   try {
-  //     const response = await fetch("../Json/cart.json");
-  //     const data = await response.json();
-  //     data = dataCart;
-  //     return data;
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
 }
-
-function generateID() {
-  let idTagPrd = "";
-  const characters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  const charactersLength = characters.length;
-  for (let i = 0; i < 6; i++) {
-    idTagPrd += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-  return idTagPrd;
-}
-const handleGetCart = () => {
-  var dataLocal = [];
-  dataLocal = localStorage.getItem("listCart");
-  dataLocal = JSON.parse(dataLocal);
-  return dataLocal;
-};
-
-function handleCreateToCart() {
-  let dataLocal = [];
-  const addToCart = document.querySelector(".btn-add-to-cart");
-  const quantityItem = document.querySelector(".quantity__item input");
-  var listColorSelect = document.querySelectorAll(".list-select__color input");
-  const countWishlist = document.querySelector(".header-wishlist-count-cart");
-  dataLocal = handleGetCart();
-  countWishlist.innerHTML = `${dataLocal.length}`;
-  addToCart.onclick = function () {
-    quantity = parseInt(quantityItem.value);
-    dataLocal = handleGetCart();
-    let Color = "";
-    for (const radioButton of listColorSelect) {
-      if (radioButton.checked) {
-        Color = radioButton.value;
-        break;
-      }
-    }
-    let newData = {
-      idTagPrd: generateID(),
-      Name: mainData.namePrd,
-      Price: mainData.Price.price,
-      Image: mainData.imgAvatar1,
-      idProduct: id,
-      quantity,
-      Color,
-    };
-    if (dataLocal === null) {
-      dataLocal = [newData];
-    } else {
-      let checkPrd = false;
-      for (let i = 0; i < dataLocal.length; i++) {
-        if (dataLocal[i].idProduct === id && dataLocal[i].Color === Color) {
-          dataLocal[i].quantity += parseInt(newData.quantity);
-          checkPrd = true;
-          break;
-        }
-      }
-
-      if (!checkPrd) {
-        dataLocal.push(newData);
-      }
-    }
-    localStorage.setItem("listCart", JSON.stringify(dataLocal));
-    countWishlist.innerHTML = `${dataLocal.length}`;
-  };
-}
-
-const handleCart = () => {
-  const inputValue = document.querySelector(".product__feature input");
-  inputValue.addEventListener("focusout", () => {
-    console.log("check focusout");
-  });
-  inputValue.addEventListener("onchange", () => {
-    console.log("check onchange");
-  });
-  const btnPrev = document.querySelector(".btn-prev-product-incart ");
-  const btnNext = document.querySelector(".btn-sum-product-incart ");
-  btnPrev.addEventListener("click", () => {
-    if (parseInt(inputValue.value) > 1)
-      inputValue.value = parseInt(inputValue.value) - 1;
-    handleUpdateNumPrd();
-  });
-  btnNext.addEventListener("click", () => {
-    inputValue.value = parseInt(inputValue.value) + 1;
-    handleUpdateNumPrd(inputValue.id);
-  });
-
-  const handleUpdateNumPrd = (data) => {};
-};
-
-const renderListCart = () => {
-  let dataLocal = [];
-  dataLocal = localStorage.getItem("listCart");
-  dataLocal = JSON.parse(dataLocal);
-  const ListPrdCart = document.querySelector(".list-product-in-cart");
-  ListPrdCart.innerHTML = dataLocal
-    .map((item) => {
-      return `
-                          <div class="product-item">
-                            <div class="product__item">
-                              <div class="product__img col-3">
-                                 <img src="${item.Image}"
-                                 alt="" class="col-lg-12 col-12">
-                               </div>
-                              <div class="product__info col-5">
-                                <h4>${item.Name}</h4>
-                                 <span class="color">Color: ${item.Color}</span>
-                                  <span class="price">
-                                    Price: <bdi><span class="woocommerce-Price-currencySymbol">$</span>${
-                                      item.Price
-                                    }.00</bdi>
-                                 </span>
-                              </div>
-                              <div class="total__price col-3">
-                                <bdi><span class="woocommerce-Price-currencySymbol">$</span>${
-                                  parseInt(item.Price) * parseInt(item.quantity)
-                                }.00</bdi>
-                              </div>
-                            </div>
-                                
-                                <div class="product__feature">
-                                  <div class="feature">
-                                    <span class="btn-prev-product-incart"><i
-                                      class="fa-sharp fa-regular fa-minus"></i></span>
-                                   <input type="number" value="${parseInt(
-                                     item.quantity
-                                   )}" id="kcJsk8">
-                                    <span class="btn-sum-product-incart"><i class="fa-light fa-plus"></i></span>
-                                  </div>
-                                  <div class="feature">
-                                    <i class="fa-light fa-trash-can"></i>
-                                    <span>Remove</span>
-                                  </div>
-                                </div>
-                            </div>
-                                `;
-    })
-    .join(" ");
-};

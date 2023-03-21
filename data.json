@@ -20,7 +20,10 @@
     "Tags": ["Duvet cover", "kids", "Recyclable"],
     "Category": "Bed sets",
     "SKU": "BE-8727U2",
-    "inCart": true
+    "inCart": true,
+    "imageSlider1": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product1a.webp",
+    "imageSlider2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product1b.webp",
+    "imageSlider3": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product1c.webp"
   },
   {
     "id": 3,
@@ -29,8 +32,8 @@
     "imgAvatar2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11b-500x625.webp",
     "Color": ["blue", "brown", "red", "yellow"],
     "Price": {
-      "cost": 15.0,
-      "price": 10.0
+      "cost": 40.0,
+      "price": 35.0
     },
     "title": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a non felis eleifend justo vel bibendum sapien.",
     "ListDesc": [
@@ -40,32 +43,12 @@
       "Phasellus fermentum in, dolor. Pellentesque facilisis."
     ],
     "Composition": "Main material: 95% Cotton, 5% Polyester",
-    "Tags": ["Duvet cover", "kids", "Recyclable"],
+    "Tags": ["Baby", "Set"],
     "Category": "Bed sets",
-    "SKU": "BE-8727U2",
-    "inCart": true
-  },
-  {
-    "id": 4,
-    "namePrd": "Baby Set Hello Cutie",
-    "imgAvatar1": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11c-500x625.webp",
-    "imgAvatar2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11b-500x625.webp",
-    "Color": ["blue", "brown", "red", "yellow"],
-    "Price": {
-      "cost": 15.0,
-      "price": 10.0
-    },
-    "title": "Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a non felis eleifend justo vel bibendum sapien.",
-    "ListDesc": [
-      "Maecenas malesuada 5 elit lectus felis, malesuada ultricies.",
-      "Curabitur et ligula. Ut molestie a, ultricies porta urna.",
-      "Vestibulum commodo volutpat a, convallis ac, laoreet enim.",
-      "Phasellus fermentum in, dolor. Pellentesque facilisis."
-    ],
-    "Composition": "Main material: 95% Cotton, 5% Polyester",
-    "Tags": ["Duvet cover", "kids", "Recyclable"],
-    "Category": "Bed sets",
-    "SKU": "BE-8727U2",
-    "inCart": true
+    "SKU": "BE-8723U2-1-1-1-1-1-1",
+    "inCart": true,
+    "imageSlider1": " https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11c.webp",
+    "imageSlider2": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11b.webp",
+    "imageSlider3": "https://themes.muffingroup.com/be/babyshop/wp-content/uploads/2021/10/babyshop-product11a.webp"
   }
 ]

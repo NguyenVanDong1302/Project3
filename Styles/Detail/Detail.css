@@ -444,4 +444,16 @@
 .back-page-items:hover {
   color: rgb(227, 227, 228);
   background-color: #ebc989;
+}
+
+.quantity__item input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.dimiss {
+  cursor: no-drop !important;
+  background-color: #909090 !important;
 }/*# sourceMappingURL=Detail.css.map */
